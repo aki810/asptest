@@ -46,5 +46,5 @@ var mjasp = {
     };
     xhr.send();
   },
-}:
+};
   
