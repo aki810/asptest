@@ -1,4 +1,4 @@
-window.onload = function writeCoolie(){
+window.onload = function writeCookie(){
   document.cookie = 'mjasp_adcode=' + getParam('adcode');
 }
 
