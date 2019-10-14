@@ -31,20 +31,17 @@ var mjasp = {
         if (count++ != 0) Full_url += "&";
         Full_url += key + "=" + param[key]
     }
-    let xhr = new XMLHttpRequest();
-    console.log(Full_url)
-    xhr.open('GET', Full_url);
-    xhr.setRequestHeader('Content-Type', 'text/html');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                console.log("success\nstatus = " + xhr.status);
-            } else {
-                console.log("error\nstatus = " + xhr.status);
-            }
-        }
+    var request = new XMLHttpRequest();
+ 
+    request.open('GET', url, true);
+    request.responseType = 'json';
+ 
+    request.onload = function () {
+      var data = this.response;
+      console.log(data);
     };
-    xhr.send();
+ 
+    request.send();
   },
 };
   
