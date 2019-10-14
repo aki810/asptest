@@ -1,5 +1,5 @@
 window.onload = function writeCookie(){
-  document.cookie = 'mjasp_adcode=' + getParam('adcode');
+  document.cookie = 'mjasp_adcode=' + getParam('adcode') + ';max-age=1800';
 }
 
 function showCookie() {
