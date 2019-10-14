@@ -2,6 +2,10 @@ window.onload = function writeCookie(){
   document.cookie = 'mjasp_adcode=' + getParam('adcode');
 }
 
+function showCookie() {
+  alert(getAcodeFromCookie());
+}
+  
 function getAcodeFromCookie() { 
   var r = document.cookie.indexOf('mjasp_adcode');
 }
