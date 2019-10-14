@@ -32,7 +32,9 @@ var mjasp = {
         Full_url += key + "=" + param[key]
     }
     var request = new XMLHttpRequest();
- 
+    
+    $.get(Full_url);
+    
     request.open('GET', Full_url, true);
     request.responseType = 'json';
  
