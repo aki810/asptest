@@ -22,7 +22,7 @@ function getParam(name, url) {
 
 var mjasp = {
   simpleSubmit: function (parameters) {
-    mjasp.get('https://script.google.com/macros/s/AKfycbwZTNj7XP36J0iXIzhVFdD136IxlTxkzNYM-iL92_q8tX8f3bdh/exec',{'p1':'AAA','hoge':'hoge'});
+    mjasp.get('https://script.google.com/macros/s/AKfycbwZTNj7XP36J0iXIzhVFdD136IxlTxkzNYM-iL92_q8tX8f3bdh/exec',{'p1':getAdcodeFromCookie()});
   },
   get: function (url, param){
     let Full_url = url + "?";
@@ -32,8 +32,6 @@ var mjasp = {
         Full_url += key + "=" + param[key]
     }
     var request = new XMLHttpRequest();
-    
-    $.get(Full_url);
     
     request.open('GET', Full_url, true);
     request.responseType = 'json';
