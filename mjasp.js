@@ -7,7 +7,7 @@ function showCookie() {
 }
   
 function getAcodeFromCookie() { 
-  var r = document.cookie.indexOf('mjasp_adcode');
+  var r = document.cookie;
 }
 
 function getParam(name, url) {
