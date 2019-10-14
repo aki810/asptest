@@ -33,7 +33,7 @@ var mjasp = {
     }
     var request = new XMLHttpRequest();
  
-    request.open('GET', url, true);
+    request.open('GET', Full_url, true);
     request.responseType = 'json';
  
     request.onload = function () {
