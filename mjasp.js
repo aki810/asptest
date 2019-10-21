@@ -22,7 +22,7 @@ function getParam(name, url) {
 
 var mjasp = {
   simpleSubmit: function (parameters) {
-    mjasp.get('https://script.google.com/macros/s/AKfycbwZTNj7XP36J0iXIzhVFdD136IxlTxkzNYM-iL92_q8tX8f3bdh/exec',{'p1':getAdcodeFromCookie(),'p2':location.href});
+    mjasp.get('https://script.google.com/macros/s/AKfycbwZTNj7XP36J0iXIzhVFdD136IxlTxkzNYM-iL92_q8tX8f3bdh/exec',{'p1':getAdcodeFromCookie(),'p2':location.href,'p3':new Date()});
   },
   get: function (url, param){
     let Full_url = url + "?";
